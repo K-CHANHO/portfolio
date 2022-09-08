@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/animate.min.css">
     <style>
       nav{
         opacity: 0.7;
@@ -30,9 +31,22 @@
           padding-top: 10px;
           padding-bottom: 10px;
         }
+        .carousel-caption{
+          bottom: 300px;
+          font-size: 30px;
+        }
+        .carousel-caption h3{
+          font-size: 50px;
+        }
+        .item:nth-child(1) .carousel-caption h3 {
+          color: black;
+        }
         .container h1, .container-fluid h1{
           padding-top: 100px;
         }
+
+
+
     </style>
     <script>
       $(document).ready(function(){
@@ -98,7 +112,7 @@
           <div class="item active">
             <img src="img/pic01.jpg" alt="New York">
             <div class="carousel-caption">
-              <h3>나이에 상관없이</h3>
+              <h3 class="animate__animated animate__flip">나이에 상관없이</h3>
               <p>0세부터 99세까지, 배움에 나이는 숫자일 뿐입니다</p>
             </div>
           </div>
@@ -187,8 +201,8 @@
         <div id="home" class="tab-pane fade in active">
           <h3>교육센터 소식</h3>
           <ul class="list-group">
-            <li class="list-group-item">7월 20일(수) 개강하는 취업연수과정 OT(오리엔테이션) 안내입니다.</li>
-            <li class="list-group-item">7월 20일(수) 개강하는 취업연수과정 OT(오리엔테이션) 안내입니다.</li>
+            <li class="list-group-item">2022년도 추석연휴 간(9일 ~ 12일) 수업 안내입니다.</li>
+            <li class="list-group-item">온라인(줌) 수업 안내입니다.</li>
             <li class="list-group-item">7월 20일(수) 개강하는 취업연수과정 OT(오리엔테이션) 안내입니다.</li>            
           </ul>
          
@@ -196,17 +210,17 @@
         <div id="menu1" class="tab-pane fade">
           <h3>자주 묻는 질문</h3>
           <ul class="list-group">
-            <li class="list-group-item">7월 20일(수) 개강하는 취업연수과정 OT(오리엔테이션) 안내입니다.</li>
-            <li class="list-group-item">7월 20일(수) 개강하는 취업연수과정 OT(오리엔테이션) 안내입니다.</li>
-            <li class="list-group-item">7월 20일(수) 개강하는 취업연수과정 OT(오리엔테이션) 안내입니다.</li>            
+            <li class="list-group-item">교육비가 너무 비싸요. 지원받을 수 있는 방법이 있을까요?</li>
+            <li class="list-group-item">비전공자인데 수업을 잘 따라갈 수 있을까요?</li>
+            <li class="list-group-item">교육 이후 어떤 진로로 취업이 가능한가요?</li>            
           </ul>
         </div>
         <div id="menu2" class="tab-pane fade">
           <h3>서식 자료실</h3>
           <ul class="list-group">
-            <li class="list-group-item">7월 20일(수) 개강하는 취업연수과정 OT(오리엔테이션) 안내입니다.</li>
-            <li class="list-group-item">7월 20일(수) 개강하는 취업연수과정 OT(오리엔테이션) 안내입니다.</li>
-            <li class="list-group-item">7월 20일(수) 개강하는 취업연수과정 OT(오리엔테이션) 안내입니다.</li>            
+            <li class="list-group-item">JAVA 실습문제 모범답안</li>
+            <li class="list-group-item">SQL 실습문제 모범답안</li>
+            <li class="list-group-item">HTML&CSS 실습문제 모범답안</li>            
           </ul>
         </div>
       </div>
