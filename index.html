@@ -4,95 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-    <title>Document</title>
+    <title>My Homepage</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+        * {margin:0; padding:0;}
+        ul{list-style-type: none;}
+        a{text-decoration: none;color:#dddddd;}
+        body{position:fixed;width:100%;height: 100%;}
+
+        /* 배경영상 */
+        .vid{width:100%; height: 100%; position:fixed;top:0px;left: 0px;opacity: 0.9;}
+        .vid video{width: 100%; min-width: 1600px;}
+        /* 로고 */
+        h1{top: 40px;z-index: 10;}
+        h1 img{width:280px; height:auto;}
+        /* header */
+        header{width:700px; height:100%; position: fixed;top: 0px;left: -490px;background:linear-gradient(-45deg,hsl(0, 0%, 100%), hsl(0, 54%, 93%), hsl(0, 68%, 81%)); transform:skewX(-45deg);opacity: 0.5;}
+        /* 1 depth */
+        #gnb {width:220px; position:absolute; top:10px;right: 0px;}
+        #gnb>li{position: relative; top: 120px;}
+        #gnb>li>a{display:block;width:220px;height:50px;font:bold 18px/3 play;color:#222; box-sizing:border-box; padding-right:40px; text-align:right;}
+        #gnb>li.on>a{background: #111; color:#fff;}
+        #gnb>li:hover>a{background: white;color:#ddd;}
+        #gnb em{display:inline-block;}
+        #gnb em i{margin-right:20px; transform:skewX(40deg)!important;}
+        /* 2 depth */
+        #gnb ul {position:absolute; left:0px;  top:0px; opacity:0; transition:all 0.4s;}
+        #gnb>li:hover ul{opacity: 0.8;left:205px;}
+        #gnb ul a{ display:block; width:150px; height:40px; background:lightgray; border-bottom:1px solid #eeaaaa; font:bold 16px/2.5 arial; color:rgb(0, 0, 0); box-sizing:border-box; padding-left:50px; margin-bottom:3px; transition:all 0.5s;}
+        #gnb ul a:hover{background:#4a52c4; color:white;}
+        #gnb>li.on ul{opacity:0.8; left: 205px;top:-10px;}
+        #gnb li.on ul a{background: #444; opacity: 0.7;}
+        /* SNS */
+        #sns{position: fixed;right:100px;top:100px;}
+        #sns li{float: left;padding:10px;}
+        #sns .fa{color:#f80606;font-size: 50px;opacity:1;transition: 0.5s;}
+        #sns li:hover .fa{transform: scale(1.5);opacity: 1;}
+
+
+    </style>
 </head>
+
 <body>
-    <h1>Hello World</h1>
-    <p>
-        Hyper Text Markup Language Is A Language For Web Page.
-    </p>
+    
+    <!--배경영상-->
+    <figure class="vid">
+        <video loop autoplay muted>
+            <source src="img/pumavideo.mp4" type="video/mp4"/>  
+        </video>
+    </figure>
 
-    HTML5 is latest version.
-    This is a test.
-    이 줄이 어디 출력될까요?
-    <br>
-    이건 어디있을까요?
-    <br><br>
-    <a href="http://www.naver.com">네이버</a>
-    <br>
-    <img src="img/picture01.jpg" alt="www이미지" width="400" height="300">
-    <img src="/img/picture01.jpg" alt="www이미지" width="400" height="300">
-    <p> HTML5
-    <p> HTML5
-    <b>HTML5</b>
-    <strong>HTML5</strong>
-    <br>
-    <i>HTML</i>
-    <em>HTML</em>
-    <mark>HTML</mark>
-    <del>HTML</del>
-    <br>
-    H<sub>2</sub>O &nbsp;E=mc<sup>2</sup>
-    <br>
-    <blockquote>
-        HTML5는 웹페이지를 구성하기 위한 표준 마크업 언어입니다.<br>
-        W3C에서 표준을 지정하고 있습니다.
-    </blockquote>
-    <address>
-        서울시 영등포구 당산동 끼리빠라뽕
-    </address>
+    <!-- 로고 -->
+    <h1><img src="img/pumalogo.jpg"></h1>
 
-    <!-- 주석은 이렇게 하는 거였구나 -->
+    <header>
+        <ul id="gnb">
+            <li>
+                <a href="#" class="on"><em><i class="fa-regular fa-paw"></i>About Puma</em></a>
+                <ul>
+                    <li><a href="#"><em><b>English</b></em></a></li>
+                    <li><a href="#"><em><b>Korean</b></em></a></li>
+                    <li><a href="#"><em><b>Spanish</b></em></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><em>Brand Info</em></a>
+                <ul>
+                    <li><a href="#"><em>브랜드 소개</em></a></li>
+                    <li><a href="#"><em>퓨마 역사</em></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><em>Community</em></a>
+                <ul>
+                    <li><a href="#"><em>sub</em></a></li>
+                    <li><a href="#"><em>sub</em></a></li>
+                    <li><a href="#"><em>sub</em></a></li>
+                    <li><a href="#"><em>sub</em></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><em>Product Value</em></a>
+                <ul>
+                    <li><a href="#"><em>sub</em></a></li>
+                    <li><a href="#"><em>sub</em></a></li>
+                    <li><a href="#"><em>sub</em></a></li>
+                    <li><a href="#"><em>sub</em></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><em>Company History</em></a>
+                <ul>
+                    <li><a href="#"><em>sub</em></a></li>
+                    <li><a href="#"><em>sub</em></a></li>
+                    <li><a href="#"><em>sub</em></a></li>
+                    <li><a href="#"><em>sub</em></a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
 
-    <a href="http://www.naver.com" target="_blank">네이버</a>
-    <a href="mailto:someone@example.com">Send eamil</a>
-    <br>
-    <a href="http://www.w3.org">
-        <img src="img/picrture02.png" alt="html5 icon">
-    </a>
-    <br>
-    <table border="1" width="500" height="500">
-        <tr>
-            <th>과정</th>
-            <th>개강일</th>
-        </tr>
-        <tr>
-            <td>응용SW엔지니어링 과정</td>
-            <td>2022-09-01</td>
-        </tr>
-    </table>
-    <table border = "1 " width="50%">
-        <tr>
-            <td colspan="2" align="center">1</td>
-        </tr>
-        <tr>
-            <td rowspan="2" align="center">2</td>
-            <td align="center">3</td>   
-        </tr>
-        <tr>
-            <td align="center">4</td>   
-        </tr>
-    </table>
-
-    <h3>커리큘럼</h3>
-    <ul>
-        <li>java</li>
-        <li>oracle</li>
-        <li>html5</li>
-    </ul>
-    <ol>
-        <li>java</li>
-        <li>oracle</li>
-        <li>html5</li>
-    </ol>
-
-    <div style="background-color:red;width:200px;height:200px;">html5</div>은 표준 마크업 언어입니다.
-    html5은 표준 마크업 언어입니다.
-    <br>
-    <span style="background-color:green;height:200px;">html5</span>은 표준 마크업 언어입니다.
-
-
+    <!-- sns 버튼모음 -->
+	<ul id="sns">
+		<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+		<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+		<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+	</ul>
 
 </body>
 </html>
